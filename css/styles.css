@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Fondo de la página */
+body {
+    background-color: #F5E6CC; /* Crema suave */
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #E1A100; /* Mostaza elegante */
+}
+
+/* Título */
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: black; /* Letras negras */
+    padding: 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #222222; /* Negro elegante */
+  font-size: 18px;
+}
+
+/* Color de los enlaces */
+.nav-link {
+  color: white !important;
+}
+
+/* Efecto hover en los enlaces */
+.nav-link:hover {
+  color: #E1A100 !important; /* Mostaza refinado */
+}
