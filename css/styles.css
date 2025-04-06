@@ -62,3 +62,49 @@ h2 {
   color: #2D2D2D;
   text-align: center;
 }
+
+
+/* Estilos de la sección de sucursales */
+h3 {
+  color: #E1A100; /* Mostaza refinado */
+  text-align: center;
+}
+
+.sucursal p {
+  text-align: center;
+  font-size: 16px;
+  color: #2D2D2D;
+}
+
+/* Estilos del formulario */
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Botón del formulario */
+.btn-primary {
+  background-color: #E1A100; /* Mostaza refinado */
+  border: none;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: #cf8f00; /* Mostaza más oscuro */
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #222222; /* Negro elegante */
+  color: white;
+  padding: 15px;
+}
+
+/* Ajuste de los iconos de redes sociales */
+footer img {
+  transition: transform 0.3s ease-in-out;
+}
+
+footer img:hover {
+  transform: scale(1.2); /* Efecto de aumento */
+}
