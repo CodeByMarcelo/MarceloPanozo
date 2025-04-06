@@ -36,3 +36,16 @@ h1 {
 .nav-link:hover {
   color: #E1A100 !important; /* Mostaza refinado */
 }
+
+/* Ajustar altura del carrusel */
+#menuCarousel img {
+  height: 400px; /* Define la altura para que las imágenes sean uniformes */
+  object-fit: cover; /* Ajusta las imágenes sin perder proporción */
+}
+
+/* Estilos para el título de la carta */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #2D2D2D; /* Gris oscuro elegante */
+}
