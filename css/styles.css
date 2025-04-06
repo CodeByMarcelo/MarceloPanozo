@@ -49,3 +49,16 @@ h2 {
   font-size: 28px;
   color: #2D2D2D; /* Gris oscuro elegante */
 }
+
+/* Estilo de las tarjetas */
+.card {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efecto sutil de sombra */
+}
+
+/* Estilo del texto en la historia */
+.card-text {
+  font-size: 18px;
+  color: #2D2D2D;
+  text-align: center;
+}
