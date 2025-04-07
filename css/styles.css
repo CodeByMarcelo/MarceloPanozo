@@ -108,3 +108,7 @@ footer img {
 footer img:hover {
   transform: scale(1.2); /* Efecto de aumento */
 }
+
+html {
+  scroll-behavior: smooth;
+}

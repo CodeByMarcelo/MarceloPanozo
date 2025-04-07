@@ -18,12 +18,12 @@
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Carta</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Sucursales</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-          </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#carta">Carta</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sucursales">Sucursales</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
       </div>
   </div>
 </nav>
@@ -33,13 +33,13 @@
   <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
           <div class="carousel-item active">
-              <img src="imagenes/golden-burger.jpg" class="d-block w-100" alt="Sandwich">
+              <img src="imagenes/golden-burger.jpg" class="d-block w-100" alt="hamburguesa con papas">
           </div>
           <div class="carousel-item">
               <img src="imagenes/pngtree-culinary-delight-a-bowl-of-gourmet-cuisine-savory-presentation-food-with-image_16447026.jpg" class="d-block w-100" alt="Plato">
           </div>
           <div class="carousel-item">
-              <img src="imagenes/images.jpg" class="d-block w-50" alt="Bebida">
+              <img src="imagenes/images.jpg" class="d-block w-100" alt="Bebida">
           </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
@@ -65,7 +65,7 @@
       </div>
       <div class="col-md-6">
           <div class="card">
-              <img src="imagenes/hamburguesa gigantre.jpg" class="card-img-top" alt="Testimonio">
+              <img src="imagenes/hamburguesa_gigante.jpg" class="card-img-top" alt="Testimonio">
               <div class="card-body">
                   <p class="card-text">"El mejor lugar para disfrutar hamburguesas gigantes. ¡Recomendado!" - Cliente feliz 😍</p>
               </div>
@@ -74,12 +74,17 @@
   </div>
 </section>
 
-<section class="container my-5">
+<section id="sucursales" class="container my-5">
   <h2 class="text-center">Nuestras Sucursales</h2>
+</section>
+
+<section id="contacto" class="container my-5">
+  <h2 class="text-center">Contáctanos</h2>
+</section>
   <div class="row">
       <div class="col-md-6">
           <h3>Sucursal 1</h3>
-          <img src="imagenes/restaurant 2.jpg" class="img-fluid" alt="Sucursal 1">
+          <img src="imagenes/restaurant_2.jpg" class="img-fluid" alt="Sucursal 1">
           <p>📍 Dirección: Calle Ficticia 123, Ciudad</p>
           <p>📞 Teléfono: +56 9 1234 5678</p>
           <p>📧 Email: contacto1@aniquilador.cl</p>
@@ -88,7 +93,7 @@
       </div>
       <div class="col-md-6">
           <h3>Sucursal 2</h3>
-          <img src="imagenes/restaurant 3.jpg" class="img-fluid" alt="Sucursal 2">
+          <img src="imagenes/restaurant_3.jpg" class="img-fluid" alt="Sucursal 2">
           <p>📍 Dirección: Av. Imaginaria 456, Ciudad</p>
           <p>📞 Teléfono: +56 9 8765 4321</p>
           <p>📧 Email: contacto2@aniquilador.cl</p>
@@ -100,7 +105,7 @@
 
 <section class="container my-5">
   <h2 class="text-center">Contáctanos</h2>
-  <form>
+  <form class="mx-auto" style="max-width: 600px;"></form>
       <div class="mb-3">
           <label for="nombre" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="nombre" required>
@@ -134,10 +139,25 @@
   <p>📧 Email: contacto@aniquilador.cl</p>
   <p>📱 Síguenos en nuestras redes sociales:</p>
   <div>
-      <a href="#" class="mx-2"><img src="imagenes/facebook.png" alt="Facebook" width="30"></a>
-      <a href="#" class="mx-2"><img src="imagenes/instagram.png" alt="Instagram" width="30"></a>
-      <a href="#" class="mx-2"><img src="imagenes/twitter.png" alt="Twitter" width="30"></a>
+      <a href="#" class="mx-2"><img src="imagenes/facebook_logo.png" alt="Facebook" width="30"></a>
+      <a href="#" class="mx-2"><img src="imagenes/logo_instagram.jpg" alt="Instagram" width="30"></a>
+      <a href="#" class="mx-2"><img src="imagenes/logo_twitter.png" alt="Twitter" width="30"></a>
   </div>
 </footer>
+<script>
+  (function () {
+      'use strict';
+      var forms = document.querySelectorAll('.needs-validation');
+      Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                  event.preventDefault();
+                  event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+          }, false);
+      });
+  })();
+</script>
 </body>
 </html>
